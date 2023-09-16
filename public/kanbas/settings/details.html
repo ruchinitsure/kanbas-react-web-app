@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<!-- <div id="root"></div> -->
+<table border="0" width="100%">
+    <tr valign="baseline">
+
+        <td width="20%">
+            <ul>
+                <li><a href="../h3.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../h2.html">Courses</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td width="20%">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="assignments/index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="details.html">Settings</a></li>
+
+   
+            </ul>
+        </td>
+
+
+        <td width="40%">
+
+            <table>
+                <tr>
+                    <td><button><a href = "details.html">Course Details</a></button></td>
+                    <td><button><a href = "#">Sections</a></button></td>
+                    <td><button><a href = "#">Navigation</a></button></td>
+                    <td><button><a href = "#">Apps</a></button></td>
+                    <td><button><a href = "#">Feature Options</a></button></td>
+                    <td><button><a href = "#">Integrations</a></button></td>
+                </tr>
+            </table>
+            <form id="text-fields">
+                <label for="text-fields-file" style="display: inline-block;"><h5>Insert:</h5></label>
+                <input id="text-fields-file" type="file" name="file" style="display: inline-block;" />`<br>
+                <h5 style="display: inline;">Name: </h5> CS4550 12631 Web Development SEC 01 Fall 2023[BOS-1-TR]<br><br>
+                <h5 style="display: inline;">Course Code: </h5> CS4550.12631.202410 <br><br>
+                <h5 style="display: inline;">Blue Print Course: </h5> No <br><br>
+                <label><h5 style="display: inline;">Course Template: </h5></label>
+                <input type="checkbox" name="check-temp" id="chkbox-temp"/>
+             <label for="chkbox-temp" style="display: inline;">Enable course as a Course Template</label>  <br> <br/>
+             <label><h5 style="display: inline;">Time Zone: </h5></label>
+             <select>
+                <option value="Edit">Pacific Time</option>
+                <option selected value="ET">Eastern Time(US & Canada)(-05:00/-04:00)</option>
+            </select>
+            <br><br>
+            <h5 style="display: inline;">SIS ID: </h5> CS4550.12631.202410 <br><br>
+            <h5 style="display: inline;">Subaccount: </h5><a href = "#">CS Undergrad</a> <br><br>
+            <h5 style="display: inline;">Term: </h5> 202410_1 Fall 2023 Semester Full Term <br><br>
+            <label><h5 style="display: inline;">Participation: </h5></label>
+             <select>
+                <option value="Edit">Year</option>
+                <option selected value="ET">Term</option>
+            </select>
+            <br>
+            Course participation is limited to <b>term</b> start and end dates.<br>
+            <label for="text-fields-dob1"><h5>Start</h5>
+             </label>
+             <input type="date" id="text-fields-dob1"/><br/>
+             <label for="text-fields-dob2"><h5>End</h5>
+             </label>
+             <input type="date" id="text-fields-dob2"/><br/><br/>
+             <input type="checkbox" name="check-restrict" id="chkbox-restrict"/>
+             <label for="chkbox-restrict" style="display: inline;">Restrict students from viewing course before term start date</label>  <br> <br/>
+             <input type="checkbox" name="check-student" id="chkbox-student"/>
+             <label for="chkbox-student" style="display: inline;">Restrict students from viewing course after term start date</label>  <br> <br/>
+             <label><h5 style="display: inline;">Default due time: </h5></label>
+             <select>
+                <option value="Edit">Pacific Time</option>
+                <option selected value="ET">Account default(11:59pm)</option>
+            </select>
+            <br><br>
+            This influences the user interface for setting due dates. It does not change the time due for any existing assignments.
+            <br><br>
+            <label><h5 style="display: inline;">Language: </h5></label>
+             <select>
+                <option value="Edit">English(UK)</option>
+                <option selected value="ET">Not set(user-configurable, defaults to English(US))</option>
+            </select>
+            <br>
+            <br>
+            <h5 style="display: inline;">File Storage: </h5> 10000 megabytes <br><br>
+            <label><h5 style="display: inline;">Large Course: </h5></label>
+                <input type="checkbox" name="check-launch" id="chkbox-launch"/>
+             <label for="chkbox-launch" style="display: inline;">Launch SpeedGrader Filtered by Student Group</label>  <br> <br/>
+             <label><h5 style="display: inline;">Grading Scheme: </h5></label>
+                <input type="checkbox" name="check-launch" id="chkbox-launch"/>
+             <label for="chkbox-launch" style="display: inline;">Enable course grading scheme</label>  <br> <br/>
+             <label><h5 style="display: inline;">License: </h5></label>
+             <select>
+                <option selected value="Private" >Private(Copyrighted)</option>
+                <option value="Public">Public</option>
+            </select>
+            <br>
+            <br>
+            <label><h5 style="display: inline;">File Copyright: </h5></label>
+                <input type="checkbox" name="check-launch" id="chkbox-launch"/>
+             <label for="chkbox-launch" style="display: inline;">Copyright and license information must be provided for files
+            before they are published.</label>  <br> <br/>
+            <h5 style="display: inline;">Visibility: </h5> If you need to make your course Public
+            please contact your administrator/support. <br><br>
+            <select>
+                <option value="Edit">English(UK)</option>
+                <option selected value="Course">Course</option>
+            </select>
+            <br>
+            <input type="checkbox" name="check-launch" id="chkbox-launch"/>
+             <label for="chkbox-launch" style="display: inline;">Include this course in the public course index</label>  <br> <br/>
+             <h5 style="display: inline;">Format: </h5> 
+             <select>
+                 <option value="Edit">English(UK)</option>
+                 <option selected value="campus">On-Campus</option>
+             </select>
+             <br>
+             <br>
+             <label><h5 style="display: inline;">Mastery Paths: </h5></label>
+             <input type="checkbox" name="check-path" id="chkbox-path"/>
+          <label for="chkbox-path" style="display: inline;">Enable individual learning paths for students
+        based on assessment</label>  <br> <br/>
+        <label><h5 style="display: inline-block;">Description:</h5></label>
+             <textarea cols="30" rows="10" style="display: inline-block; vertical-align: top;"></textarea>
+             <br>
+             <br>
+        <a href = "#" style="margin-left: 80px;">more options</a><br><br>
+        <button type="submit" formaction="#" style="float: right;">Update Course Details</button>
+
+
+
+
+
+
+
+            
+            
+
+            </form>
+            </td>
+            </tr>
+
+
+                    
+            
+</table>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<!-- <div id="root"></div> -->
+<table border="0" width="100%">
+    <tr valign="baseline">
+
+        <td width="20%">
+            <ul>
+                <li><a href="../h3.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="../h2.html">Courses</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td width="20%">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="index.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="settings/details.html">Settings</a></li>
+
+   
+            </ul>
+        </td>
+
+
+        <td width="40%">
+
+            <table>
+                <tr>
+           
+
+                    <td><select>
+                        <option value="Edit">Edit</option>
+                        <option selected value="Speed Grader">Speed Grader</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                        <option value="Move To">Move To..</option>
+                        <option value="Send To">Send To..</option>
+                        <option value="Copy To">Copy To..</option>
+                        <option value="Send to Commons">Send To Commons</option>
+                    </select></td>
+                </tr>
+            </table>
+            <hr color="grey">
+            <form id="text-fields">
+                <label for="text-fields-student"><h2>Assignment Name</h2></label>
+                <input id = "text-fields-student" type="text" value="A1 - ENV + HTML"placeholder="A1 - ENV + HTML"/><br/>
+                <br>
+                <textarea cols="25" rows="5">This is the assignment description.</textarea> <br>
+                <label for = "text-fields-points">Points</label><br>
+                <input id="text-fields-points" type = "text" value="100" placeholder="100"/><br/><br>
+                <label for = "text-fields-assignment-group">Assignment Group</label><br/> 
+                <select id = "text-fields-assignment-group">
+                    <option value="Edit">Edit</option>
+                    <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select><br/><br>
+                <label for = "text-fields-display-grade">Display Grade as</label><br/> 
+                <select id = "text-fields-display-grade">
+                    <option value="Edit"></option>
+                    <option selected value="Percentage">Percentage</option>
+                    <option value="Duplicate"></option>
+                    <option value="Delete"></option>
+                </select><br/><br>
+                <label for = "text-fields-submission">Submission Type</label><br/> 
+                <select id = "text-fields-submission">
+                    <option value="Edit"></option>
+                    <option selected value="Online">Online</option>
+                    <option value="Duplicate"></option>
+                    <option value="Delete"></option>
+                </select><br/><br>
+                <label>Online Entry Options</label><br/>
+            <input type="checkbox" value="text entry"
+            name="check-type" id="chkbox-text"/>
+            <label for="chkbox-text">Text Entry</label>    <br/>
+            <input type="checkbox" value="website"
+            name="check-website" id="chkbox-website"/>
+            <label for="chkbox-website">Website URL</label>    <br/>
+            <input type="checkbox" value="media"
+            name="check-media" id="chkbox-media"/>
+            <label for="chkbox-media">Media Recordings</label> <br/>
+            <input type="checkbox" value="annotation" name="check-annotation" id="chkbox-annotation"/>
+            <label for="chkbox-annotation">Student Annotation</label><br/>
+            <input type="checkbox" value="file"
+            name="check-file" id="chkbox-file"/>
+            <label for="chkbox-file">File Uploads</label> <br/><br/>
+            <label for = "text-fields-submission">Submission Attempts</label><br/> 
+                <select id = "text-fields-submission">
+                    <option value="Edit"></option>
+                    <option selected value="Unlimited"> Unlimited</option>
+                    <option value="Duplicate"></option>
+                    <option value="Delete"></option>
+                </select><br/><br>
+                <label for = "text-fields-plaigarism">Plaigarism Review</label><br/> 
+                <select id = "text-fields-plaigarism">
+                    <option value="Edit"></option>
+                    <option selected value="None"> None</option>
+                    <option value="Duplicate"></option>
+                    <option value="Delete"></option>
+                </select><br/><br>
+                <label>Group Assignment</label><br/>
+                <input type="checkbox" value="group"
+                name="check-group" id="chkbox-group"/>
+                <label for="chkbox-group">This is a group assignment</label> <br/><br/>
+                <label>Peer Reviews</label><br/>
+                <input type="checkbox" value="peer"
+                name="check-peer" id="chkbox-peer"/>
+                <label for="chkbox-peer">Require Peer Reviews</label> <br/><br/>
+                
+                <label for="text-fields-assign1">Assign</label><br/>
+                <label for="text-fields-assign">Assign To</label><br/>
+                <input id = "text-fields-assign" type="text" value="Everyone" placeholder="Everyone"/><br/>
+                <br>
+                <label for="text-fields-dob1">
+                    Due
+                 </label><br/>
+                 <input type="date"
+                       id="text-fields-dob1"
+                       value="2021-01-01"/><br/><br/>
+                       <label for="text-fields-dob2">
+                        Available from
+                     </label><br/>
+                     <input type="date"
+                           id="text-fields-dob2"
+                           value="2021-01-01"/><br/><br/>
+                     <label for="text-fields-dob3">
+                            Until
+                         </label><br/>
+                         <input type="date"
+                               id="text-fields-dob3"
+                               value="2021-01-01"/><br/><br/>
+                               <table>
+                                <tr>
+                                    
+                                    <td><button type="submit" formaction="index.html">Cancel</button></td>
+                                 <td><button type="submit" formaction="index.html">Save</button></td>
+                                </tr>
+                            </table>
+          
+
+
+
+
+
+
+
+            </form>
+            </td>
+            </tr>
+
+
+                    
+            
+</table>
+</body>
+</html>
