@@ -17,7 +17,7 @@
 
  /* Styles for Kanbas Navigation Sidebar */
  .kanbas-sidebar {
-    width: 150px; 
+    width: 75px; 
     padding: 10px;
     float: left;
     background-color: black;
@@ -92,7 +92,7 @@
  .logo-container img {
     width: 60px;
     height: 60px;
-    margin-left: 30px;
+    margin-left: -10px;
  }
 
  .profile-text {
