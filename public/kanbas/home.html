@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%" >
     <tr valign="baseline">
 
@@ -60,7 +60,7 @@
                         <option selected value="Publish">
                             Publish All</option>
                         <option value="FANTASY"></option>
-                     </select></td><!-- Should be a drop down box -->
+                     </select></td>
                     <td><button>Module</button></td>
                 </tr>
             </table>
@@ -143,4 +143,233 @@
     </tr>
 </table>
 </body>
-</html>
+</html-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../kanbas/h1.css" rel="stylesheet"/>
+   <link href="../kanbas/h3.css" rel="stylesheet"/>
+   
+   <link href="../kanbas/home.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+<div class="container-fluid">
+    <div class="row no-gutters">
+    <div class="row">
+       
+<div class=" kanbas-sidebar sidebar .d-none .d-sm-block" style = "height: 100vh;">
+    <ul>
+        <div class="logo-container">
+            <img src="../kanbas/logo1.png" alt="Northeastern Logo">
+        </div>
+       <li><a href="../kanbas/h3.html" ><i class="fa-regular fa-circle-user" style = "color: grey;"></i>Account</a></li>
+       <li><a href="../kanbas/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+       <li><a href="../kanbas/home.html" class="active"><i class="fas fa-book"></i> Courses</a></li>
+       <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+       <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+       <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+       <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+       <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+       <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+    </ul>
+</div>
+
+ <div class="col-3 col-md-2 no-padding   .d-none .d-sm-block .d-md-block">
+
+ 
+    <div class="profile-header d-none d-md-block">
+        <div class="profile-heading-icon ">
+         
+            <i class="fas fa-bars"></i>
+            </a>
+    
+        </div>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb wd-breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="link" style="color: red;">CS4500.4031.202340</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+    </div>
+    <div class="profile-header1 " style="background-color: black;">
+        <span class="profile-heading-icon ">
+            <div class = "btn btn-danger">
+            <a href = "../kanbas/h4.html">
+            <i class="fas fa-bars"></i>
+        </a>
+            </div>
+            <div class="module-header">
+                <p class="para" style="color: white;">CS5610.4410.2230 Modules</p>
+                <i class="fa-solid fa-glasses" style="margin-left: auto;"></i>
+                <a href = "../kanbas/h5.html"><i class="fa-solid fa-chevron-down" style="margin-left: auto;"></i></a>
+            </div>
+        
+        <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb wd-breadcrumb">
+                <li class="breadcrumb-item"><a href="#">CS4500.4031.202340</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav> -->
+
+    </div>
+    <div class="account-sidebar sidebar">
+    
+    
+    <hr>
+   <ul>
+    <li><a href="../kanbas/home.html"class="selected">| Home</a></li>
+    <li><a href="#">Modules</a></li>
+     <li><a href="#">Piazza</a></li>
+     <li><a href="#">Zoom Meetings</a></li>
+     <li><a href="../kanbas/assignments/index.html">Assignments</a></li>
+     <li><a href="#">Quizzes</a></li>
+     <li><a href="../kanbas/grades.html">Grades</a></li>
+     <li><a href="#">People</a></li>
+     <li><a href="#">Panopto Video</a></li>
+     <li class="d-flex align-items-center">
+        <a href="#">Discussions</a>
+        <i class="fa-regular fa-eye-slash ml-2"></i>
+      </li>
+      
+     <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Progress Report</a></li>
+     <li class="d-flex align-items-center"><a href="../kanbas/settings/details.html">Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+   </ul>
+ </div>
+ 
+
+</div>
+
+<div class="col-8 col-md-7 no-padding .d-block">
+    <div class = "home-screen">
+        <!-- Module Sidebar -->
+        <div class="module-sidebar d-flex justify-content-end">
+            <button class="btn btn-light">Collapse All</button>
+            <button class="btn btn-light">View Progress</button>
+            <div class="dropdown">
+               <button class="btn dropdown-toggle" type="button" id="publishDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: green;">
+                <i class="fa-regular fa-circle-check"></i>
+                  Publish All
+               </button>
+               <div class="dropdown-menu" aria-labelledby="publishDropdown">
+                  <a class="dropdown-item" href="#">COMEDY</a>
+                  <a class="dropdown-item" href="#">DRAMA</a>
+                  <a class="dropdown-item" href="#">Publish</a>
+                  <a class="dropdown-item" href="#">FANTASY</a>
+               </div>
+            </div>
+            <button class="btn btn-danger "><i class="fa-solid fa-plus"></i>Module</button>
+         </div>
+         <hr>
+         <!-- Module List -->
+        
+           <!-- Modules List -->
+           <ul class="list-group">
+              <!-- Module 1 -->
+              <li class="list-group-item list-group-item-secondary">Week 0 - INTRO</li>
+              <ul class="list-group">
+                 <li class="list-group-item">LEARNING OBJECTIVES</li>
+                    <ul class="list-group ">
+                        <li class="list-group-item custom-indent"><span class = "left-indent" >Introduction to the course </span></li>
+                        <li class="list-group-item custom-indent"><span class = "left-indent" >Learn what is Web Development</span></li>
+                        <li class="list-group-item custom-indent"><span class = "left-indent" >Creating a development environment</span></li>
+                        <li class="list-group-item custom-indent"><span class = "left-indent">Creating a web application</span></li>
+                        <li class="list-group-item custom-indent"><span class = "left-indent">Getting started with the 1st assignment</span></li>
+                 </ul>
+                 <li class="list-group-item">READING</li>
+                 <ul class="list-group">
+                    <li class="list-group-item"><span class = "left-indent" >Full Stack Developer - Chapter 1 - Introduction</span></li>
+                    <li class="list-group-item"><span class = "left-indent" >Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</span></li>
+                 </ul>
+                 <li class="list-group-item">SLIDES</li>
+                 <ul class="list-group">
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Introduction to Web Development Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Creating an HTTP server with Node.js Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Creating a React Application Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                 </ul>
+              </ul>
+              <!-- Module 2 -->
+              <li class="list-group-item list-group-item-secondary">Week 1 - HTML</li>
+              <ul class="list-group">
+                 <li class="list-group-item">LEARNING OBJECTIVES</li>
+                 <ul class="list-group">
+                    <li class="list-group-item">Learn how to create user interfaces with HTML</li>
+                    <li class="list-group-item">Keep working on assignment 1</li>
+                    <li class="list-group-item">Deploy the assignment to Netlify</li>
+                 </ul>
+                 <li class="list-group-item">READING</li>
+                 <ul class="list-group">
+                    <li class="list-group-item">Full Stack Developer - Chapter 1 - Introduction</li>
+                    <li class="list-group-item">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+                 </ul>
+                 <li class="list-group-item">SLIDES</li>
+                 <ul class="list-group">
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Introduction to Web Development Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Creating an HTTP server with Node.js Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                    <li class="list-group-item"><a href="#" class="text-danger"><span class = "left-indent" ><i class="fa-solid fa-link"></i>Creating a React Application Links to an external site.<i class="fa-solid fa-arrow-up-right-from-square"></span></i></a></li>
+                 </ul>
+              </ul>
+           </ul>
+        </div>
+    </div>
+</div>
+<div class="col-1 col-md-2 d-none d-md-block d-sm-block justify-content-between">
+    <div class = "course-content">
+    <div class="course-status">
+        <button class="btn btn-light" style="float: right;"><i class="fa-solid fa-glasses"></i>Student View</button>
+        <br><br><br><br>
+       <h2>Course Status</h2>
+       <div class="buton d-flex">
+        <button class="btn btn-light"><i class="fas fa-stop"></i>Unpublish</button>
+        <button class="btn btn-light" style="background-color: green;"><i class="fa-regular fa-circle-check"></i>Published</button>
+     </div>
+     <br>
+       <ul class = "list-group">
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-download"></i> Import Existing Content</a></li>
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-upload"></i>Import from Commons</a></li>
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-home"></i>Choose Home Page</a></li>
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-eye"></i>View Course Stream</a></li>
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-bullhorn"></i>New Announcement</a></li>
+          <li class="list-group-item"><a href="#" class = "link" style="color: grey;"><i class="fas fa-chart-bar"></i>New Analytics</a></li>
+          <li class="list-group-item"><a href="#"class = "link" style="color: grey;"><i class="fas fa-bell"></i>View Course Notifications</a></li>
+       </ul>
+    </div>
+    <div class = "todo">
+        <h2>To Do</h2>
+        <hr>
+          <a href="#" class="link" style="color:red;"><i class="fas fa-calendar"></i>Grade A1 - ENV + HTML</a></li>
+        </ul>
+
+    </div>
+    <br>
+    <div class="coming-up">
+       <h2>Coming Up</h2>
+       <hr>
+       <br>
+
+       <a href="#"><i class="fas fa-calendar"></i>Lecture CS4550.12631.202410 Sep 7 at 11:45 am</a><br><br>
+        <a href="#"><i class="fas fa-calendar"></i>Lecture CS4550.12631.202410 Sep 11 at 11:45 am</a><br><br>
+        <a href="#"><i class="fas fa-calendar"></i>CS5610 06 SP23 Lecture Sep 11 at 6pm</a><br><br>
+    </div>
+ </div>
+</div>
+</div>
+  </body>
+  </html>
+

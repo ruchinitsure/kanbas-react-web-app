@@ -1,0 +1,38 @@
+.button-right{
+    margin-left: 100px;
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+        display: none;
+    }
+
+    .kanbas-sidebar-collapse {
+        display: none;
+    }
+
+    .account-sidebar-collapse {
+        display: none;
+    }
+
+    .assign {
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+    .assign {
+        width: 100%;
+    }
+   
+} 

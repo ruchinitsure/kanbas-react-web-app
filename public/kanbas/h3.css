@@ -1,0 +1,140 @@
+.sidebar {
+
+    position: relative;
+    height: 700vh !important; 
+ }
+
+ .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Left-justify link text */
+ }
+
+ .sidebar li {
+    margin-bottom: 10px; 
+ }
+
+ /* Styles for Kanbas Navigation Sidebar */
+ .kanbas-sidebar {
+    width: 150px; 
+    padding: 10px;
+    float: left;
+    background-color: black;
+    height: 100vh; 
+ }
+
+ .kanbas-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .kanbas-sidebar li {
+    margin-bottom: 10px; /* Adjust margin as needed within the 5-10px range */
+ }
+
+ .kanbas-sidebar a {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px; /* Adjust padding as needed within the 5-10px range */
+ }
+
+ .kanbas-sidebar a.active {
+    background-color: white;
+    color: red;
+ }
+ .kanbas-sidebar a:not(.active) {
+    color: white; /* Set the text color of non-active links to white */
+}
+.kanbas-sidebar a:not(.active) i {
+    color: red; /* Set the icon color of non-active links to red */
+}
+
+ .kanbas-sidebar i {
+    font-size: 40px;
+    margin-bottom: 5px; /* Adjust margin as needed to separate icon and text */
+ }
+
+ /* Styles for Account Navigation Sidebar */
+ .account-sidebar {
+    width: 200px; /* Adjust as needed within the 190-200px range */
+    margin-left: 20px; /* Create space between the sidebars */
+    float: left; /* Float Account sidebar to the left */
+ }
+
+ .account-sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+    color: red;
+    padding: 5px 0; /* Create space between links */
+ }
+
+ .account-sidebar a.selected {
+    color: black;
+ }
+
+
+
+ /* Northeastern logo and text */
+ .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+ }
+
+ .logo-container img {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+ }
+
+ .profile-text {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+ }
+
+ /* Corner lines */
+ .corner-lines {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    height: 3px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+ }
+ .profile-heading {
+    color: black;
+    font-size: 22px; /* Increase font size as needed */
+    margin-bottom: 80px; /* Adjust margin as needed */
+    position: relative;
+ }
+ 
+ .profile-heading::after {
+    content: "";
+    display: block;
+    width: 700%;
+    height: 2px; /* Adjust line thickness as needed */
+    background-color: gray; /* Set line color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ }
+ .profile-heading-icon{
+    color : red;
+ 
+ }
+ .profile-text{
+    color : black;
+    display:flex;
+    font-size: 20px;
+ }

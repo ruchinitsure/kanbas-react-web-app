@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -215,4 +215,176 @@
             
 </table>
 </body>
-</html>
+</html----->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../h1.css" rel="stylesheet"/>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+   <link href="../assignments/index.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+        <div class="row">
+           
+    <div class="kanbas-sidebar sidebar">
+        <ul>
+            <div class="logo-container">
+                <img src="../logo1.png" alt="Northeastern Logo">
+            </div>
+           <li><a href="../h3.html" ><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+           <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+           <li><a href="../home.html" class="active"><i class="fas fa-book"></i> Courses</a></li>
+           <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+           <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+           <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+           <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+           <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+           <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+        </ul>
+    </div>
+    
+     <div class="col-md-4 no-padding d-block d-md-block">
+    
+     <div class="account-sidebar sidebar">
+        <div class="profile-header">
+            <span class="profile-heading-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                </ol>
+            </nav>
+
+        </div>
+        <hr>
+       <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+         <li><a href="#">Piazza</a></li>
+         <li><a href="#">Zoom Meetings</a></li>
+         <li><a href="../assignments/index.html" class="selected">|Assignments</a></li>
+         <li><a href="#">Quizzes</a></li>
+         <li><a href="../grades.html">Grades</a></li>
+         <li><a href="#">People</a></li>
+         <li><a href="#">Panopto Video</a></li>
+         <li class="d-flex align-items-center">
+            <a href="#">Discussions</a>
+            <i class="fa-regular fa-eye-slash ml-2"></i>
+          </li>
+          
+         <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="../settings/details.html">Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+       </ul>
+     </div>
+    </div>
+    <div class="col-md-6">
+        <div class = "assign" >
+        <div class="d-flex float-end">
+          <div class="w-25">
+            <form>
+              <input type="text" class="form-control" placeholder="Search for Assignments" />
+            </form>
+          </div>
+          <button class="btn  ml-auto"><i class="fa-solid fa-plus"></i>Group</button>
+          <button class="btn btn-danger"><i class="fa-solid fa-plus"></i>Assignment</button>
+          <button class="btn " type="button">
+            <a href = "../assignments/edit.html">
+            <i class="fas fa-ellipsis-v"></i>
+            </a>
+        </button>
+        </div>
+        <hr class="mt-2 mb-4" />
+  
+        <!-- Assignment List -->
+       
+        <ul class="list-group rounded bg-light p-3"> 
+            <li class="list-group-item list-group-item-secondary">Assignments<span class="badge rounded-pill">40% of Total</span></li>
+            
+          <!-- Assignment Item 1 -->
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A1 - SETUP</a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+            </div>
+    
+          </li> 
+          <!-- Assignment Item 2 -->
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A2 - HTML</a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+            </div>
+    
+          </li>
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A3 - CSS </a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+            </div>
+
+          </li>
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A4 - BOOTSTRAP</a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+            </div>
+
+          </li>
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A5 - JAVASCRIPT</a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+    
+          </li>
+          <li class="list-group-item border-left border-success d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-file-alt" style="font-size: 20px; color: grey;"></i>
+              <a href="../assignments/edit.html">A6 - REACT</a>
+              <br />
+              <a href="#">Multiple Modules</a> | Not available
+            </div>
+          </li>
+          <!-- More Assignment Items... -->
+        </ul>
+      </div>
+  
+    
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+    </div>
+      </body>
+      </html>
+    
+    

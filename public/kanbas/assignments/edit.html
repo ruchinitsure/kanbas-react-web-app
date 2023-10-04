@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -179,4 +179,283 @@
             
 </table>
 </body>
-</html>
+</html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+  
+ 
+   <link href="../h1.css" rel="stylesheet"/>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+   <link href="../assignments/index.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+        <div class="row">
+           
+    <div class="kanbas-sidebar sidebar">
+        <ul>
+            <div class="logo-container">
+                <img src="../logo1.png" alt="Northeastern Logo">
+            </div>
+           <li><a href="../h3.html" ><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+           <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+           <li><a href="../home.html" class="active"><i class="fas fa-book"></i> Courses</a></li>
+           <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+           <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+           <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+           <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+           <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+           <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+        </ul>
+    </div>
+    
+     <div class="col-3 col-md-4 no-padding d-block d-md-block">
+    
+     <div class="account-sidebar sidebar">
+        <div class="profile-header">
+            <span class="profile-heading-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
+                </ol>
+            </nav>
+
+        </div>
+        <hr>
+       <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+         <li><a href="#">Piazza</a></li>
+         <li><a href="#">Zoom Meetings</a></li>
+         <li><a href="../assignments/index.html"class="selected" >| Assignments</a></li>
+         <li><a href="#">Quizzes</a></li>
+         <li><a href="../grades.html">Grades</a></li>
+         <li><a href="#">People</a></li>
+         <li><a href="#">Panopto Video</a></li>
+         <li class="d-flex align-items-center">
+            <a href="#">Discussions</a>
+            <i class="fa-regular fa-eye-slash ml-2"></i>
+          </li>
+          
+         <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="../settings/details.html">Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+       </ul>
+     </div>
+    </div>
+    <div class="col-8 col-md-6">
+        <div class = "assign">
+            <div class="d-flex justify-content-end">
+                <div class="button-right">
+    
+              <button type="button" class="btn-sm btn-success custom-success-btn mb-1">
+                <i class="fas fa-check-circle" style="color: #099f72;"></i>
+                Published
+            </button>
+            <button>
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+            </div>
+            </div>
+            <hr class="mt-2 mb-4" />
+        <form id="text-fields">
+            <!-- Assignment Name -->
+            <label for="text-fields-student">Assignment Name</label>
+            <input id="text-fields-student" type="text" class="form-control" value="A1 - ENV + HTML" placeholder="A1 - ENV + HTML"/><br>
+            <textarea id="assignment-description" class="form-control" rows="5">This is the assignment description.</textarea>
+            <!-- Points -->
+            <br>
+            <div class="row mb-3">
+                <label for="r1" class="col-sm-2 col-form-label">
+                  Points</label>
+                <div class="col col-sm-10">
+                  <input type="number" class="form-control"
+                         id="r1"/>
+                </div>
+              </div>
+              <br>
+            <!--label for="text-fields-points">Points</label>
+            <input id="text-fields-points" type="text" class="form-control" value="100" placeholder="100"/><br-->
+            <!-- Assignment Group -->
+
+            <div class="row mb-3">
+                <label for="r2" class="col-sm-2 col-form-label">
+                  Assign Group</label>
+                <div class="col col-sm-10">
+                    <select id="r2" class="form-control">
+                        <option value="Edit">Edit</option>
+                        <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                    </select>
+                </div>
+              </div>
+              <br>
+            
+
+
+            <!--label for="text-fields-assignment-group">Assignment Group</label>
+            <select id="text-fields-assignment-group" class="form-control">
+                <option value="Edit">Edit</option>
+                <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                <option value="Duplicate">Duplicate</option>
+                <option value="Delete">Delete</option>
+            </select><br-->
+            <!-- Display Grade As -->
+
+            <div class="row mb-3">
+                <label for="r2" class="col-sm-2 col-form-label">
+                  Display Grade as</label>
+                <div class="col col-sm-10">
+                    <select id="text-fields-display-grade" class="form-control">
+                        <option value="Edit"></option>
+                        <option selected value="Percentage">Percentage</option>
+                        <option value="Duplicate"></option>
+                        <option value="Delete"></option>
+                    </select>
+                </div>
+              <br>
+              <br>
+              <br>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox" id="r6"/>
+                      <label class="form-check-label" for="r6">
+                        Do not count this assignment towards the final grade</label>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            
+            <!-- Submission Type -->
+            <div class="row mb-3">
+                <div class="col col-sm-6">
+                    <label for="input1" class="form-label">Submission Type</label>
+                </div>
+                <div class="col-sm-6 border p-3">
+                   
+                    
+                    <select class="form-select">
+                        <option selected>Online</option>
+                     </select>
+                     <br>
+                     <label class="form-check-label mb-3 mt-3" style="font-weight: bold;">Online Entry Options</label>
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Text Entry
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Website URL 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Media Recordings
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Student Annotations
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          File Uploads
+                        </label>
+                      </div>
+
+                </div>
+                
+       
+            </div>
+                
+
+            <!-- Assign To -->
+            <div class="row mb-3">
+                <div class="col col-sm-6">
+                    <label for="input1" class="form-label">Assign To</label>
+                </div>
+                <div class="col col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-10">
+                                <label for="text-fields-assign">Assign To</label>
+                                <input id="text-fields-assign" type="text" class="form-control" value="Everyone" placeholder="Everyone" /><br>
+                                <!-- Due Date -->
+                                <label for="text-fields-dob1">Due Date</label>
+                                <input type="date" id="text-fields-dob1" value="2021-01-01" class="form-control" /><br>
+                                <!-- Available from and Until in the same row -->
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- Available from -->
+                                        <label for="text-fields-dob2">Available from</label>
+                                        <input type="date" id="text-fields-dob2" value="2021-01-01" class="form-control" />
+                                    </div>
+                                    <div class="col">
+                                        <!-- Until -->
+                                        <label for="text-fields-dob3">Until</label>
+                                        <input type="date" id="text-fields-dob3" value="2021-01-01" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <!-- Add Button -->
+                            + Add
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+           
+            
+            <!-- Save and Cancel Buttons -->
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2 d-flex justify-content-end">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="r6" />
+                            <label class="form-check-label" for="r6">
+                                Notify users that this content has changed
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary" formaction="index.html">Cancel</button>
+                    <button type="submit" class="btn btn-danger" formaction="index.html">Save</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+  </div>
+</div>
+    </div>
+      </body>
+      </html>

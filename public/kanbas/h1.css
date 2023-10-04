@@ -1,0 +1,57 @@
+.kanbas-sidebar {
+    background-color: black;
+    width: 75px; /* Adjust as needed within the 75-85px range */
+    padding: 10px;
+    height:100vh !important;
+ }
+
+ .kanbas-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .kanbas-sidebar li {
+    margin-bottom: 10px; /* Adjust margin as needed within the 5-10px range */
+ }
+
+ .kanbas-sidebar a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px; /* Adjust padding as needed within the 5-10px range */
+ }
+
+ .kanbas-sidebar a.active {
+    background-color: white;
+    color: red;
+ }
+ .kanbas-sidebar a:not(.active) {
+    color: white;
+ }
+.kanbas-sidebar a:not(.active) i {
+    color: red;
+}
+ .kanbas-sidebar i{
+    font-size: 40px;
+    margin-right: 10px;
+    align-items: center;
+
+
+ }
+ .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 2px;
+ }
+
+ .logo-container img {
+    width: 80px;
+    height: 80px;
+
+ }

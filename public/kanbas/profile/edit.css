@@ -1,0 +1,146 @@
+.sidebar {
+    padding: 15px; /* Add some padding to the sidebars */
+ }
+
+ .edit-screen {
+    background-color: white; /* Add a background color to the edit screen */
+    padding: 20px;
+    /* Add some padding to the edit screen content */
+ }
+
+ .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .profile-header i {
+    color: grey; /* Change the color of the user icon */
+ }
+
+ /* Custom CSS to reduce space between columns */
+ .col-md-3 {
+    margin-right: 10px; /* Add margin to the right of the first two columns */
+ }
+
+ /* Custom CSS for responsiveness */
+ @media (max-width: 992px) {
+    .col-md-3 {
+       margin-right: 0; /* Remove margin on smaller screens */
+       margin-bottom: 20px; /* Add margin at the bottom of the columns */
+    }
+ }
+ .profile-screen {
+    flex-basis: calc(33.33% - 10px); /* Adjust as needed */
+    margin: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-left:50px;
+}
+
+.profile-header h2 {
+    margin-left: 10px;
+}
+.account-sidebar{
+    margin-left: 0px;
+}
+
+.profile-actions {
+    display: inline;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    align-items: center; /* Center vertically */
+    margin-top: 10px;
+    margin-left:500px;
+}
+
+
+
+h3 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+a {
+    color: red ; /* Red color for links */
+    text-decoration: none !important; /* Remove underlines */
+}
+
+
+.btn-primary {
+    background-color: black ; 
+    color:black;
+    justify-content: center;
+}
+
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-2.no-padding,
+.col-md-3.no-padding {
+    padding: 0;
+}
+.col-md-6{
+
+    margin-top: 100px;
+}
+.profile-heading {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+.profile-heading-icon {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+        display: none;
+    }
+
+    .kanbas-sidebar-collapse {
+        display: none;
+    }
+
+    .account-sidebar-collapse {
+        display: none;
+    }
+
+    .edit-screen {
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+    .edit-screen {
+        width: 100%;
+    }
+   
+} 
+
+
+

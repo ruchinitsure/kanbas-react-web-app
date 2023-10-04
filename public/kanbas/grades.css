@@ -1,0 +1,101 @@
+.grade{
+    margin-top: 120px;
+    /* width: 1100px; */
+}
+.table-striped th,
+.table-striped td {
+  border-color: grey !important; 
+  border-width: 1px !important; 
+  border-style: solid !important; 
+}
+.student-name{
+    color: red;;
+}
+.wd-breadcrumb{
+    background-color: white!important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">" !important;
+    padding-top: 2px !important;
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+        display: none;
+    }
+
+    .kanbas-sidebar-collapse {
+        display: none;
+    }
+
+    .account-sidebar-collapse {
+        display: none;
+    }
+
+    .grade{
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+    .grade {
+        width: 100%;
+    }
+   
+} 
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
+
+/* Optional: Customize the scrollbar */
+.my-custom-scrollbar {
+    position: relative;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow: auto;
+}
+.my-custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Optional: Customize the scrollbar */
+.table-responsive::-webkit-scrollbar {
+    width: 12px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

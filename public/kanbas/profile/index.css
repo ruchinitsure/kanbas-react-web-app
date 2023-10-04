@@ -1,0 +1,109 @@
+.profile-screen {
+    flex-basis: calc(33.33% - 10px); /* Adjust as needed */
+    margin: 10px;
+    margin-top: 70px;
+    padding: 20px;
+    background-color: white;
+    width: 1100px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left:50px;
+
+}
+.profile-header i {
+    color: grey;
+    margin-bottom: 20px; /* Change the color of the user icon */
+ }
+
+.profile-header h2 {
+    margin-left: 30px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-top: 0px;
+    margin-left:500px;
+}
+
+.profile-actions button {
+    margin-left: 10px;
+}
+
+.profile-heading-text{
+    font-size:9px;
+    width:500px;
+}
+
+
+h3 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+a {
+    color: red ; /* Red color for links */
+    text-decoration: none !important; /* Remove underlines */
+}
+
+/* Override Bootstrap button styles */
+.btn-primary {
+    background-color: white !important; /* Red background for primary buttons */
+    justify-content: center;
+    position:relative;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-2.no-padding,
+.col-md-3.no-padding {
+    padding: 0;
+}
+.account-sidebar {
+    margin-left: 0; /* Remove the left margin to bring it closer to kanbas-sidebar */
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+        display: none;
+    }
+
+    .kanbas-sidebar-collapse {
+        display: none;
+    }
+
+    .account-sidebar-collapse {
+        display: none;
+    }
+
+    .profile-screen {
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+    .profile-screen {
+        width: 100%;
+    }
+   
+} 
+
