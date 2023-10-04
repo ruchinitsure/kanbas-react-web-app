@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -144,4 +144,221 @@
     </tr>
 </table>
 </body>
-</html>
+</html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../kanbas/h1.css" rel="stylesheet"/>
+   <link href="../kanbas/h3.css" rel="stylesheet"/>
+   
+   <link href="../kanbas/grades.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+        <div class="row">
+           
+    <div class="kanbas-sidebar sidebar">
+        <ul>
+            <div class="logo-container">
+                <img src="../kanbas/logo1.png" alt="Northeastern Logo">
+            </div>
+           <li><a href="../kanbas/h3.html" ><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+           <li><a href="../kanbas/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+           <li><a href="../kanbas/home.html" class="active"><i class="fas fa-book"></i> Courses</a></li>
+           <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+           <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+           <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+           <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+           <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+           <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+        </ul>
+    </div>
+    
+     <div class="col-3 col-md-4 no-padding d-block d-md-block">
+    
+     <div class="account-sidebar sidebar">
+        <div class="profile-header">
+            <span class="profile-heading-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb wd-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+
+        </div>
+        <hr>
+       <ul>
+        <li><a href="../kanbas/home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+         <li><a href="#">Piazza</a></li>
+         <li><a href="#">Zoom Meetings</a></li>
+         <li><a href="../kanbas/assignments/index.html" >Assignments</a></li>
+         <li><a href="#">Quizzes</a></li>
+         <li><a href="../kanbas/grades.html"class="selected">|Grades</a></li>
+         <li><a href="#">People</a></li>
+         <li><a href="#">Panopto Video</a></li>
+         <li class="d-flex align-items-center">
+            <a href="#">Discussions</a>
+            <i class="fa-regular fa-eye-slash ml-2"></i>
+          </li>
+          
+         <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="../kanbas/settings/details.html">Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+       </ul>
+     </div>
+    </div>
+    <div class="col-8 col-md-6">
+        <div class = "grade">
+            <div class="d-flex justify-content-end">
+                <div class="button-right">
+    
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Import
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-upload"></i> Export
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Export Option 1</a>
+                            <a class="dropdown-item" href="#">Export Option 2</a>
+                      
+                        </div>
+                    </div>
+            <button>
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            </div>
+            </div>
+            <hr class="mt-2 mb-4" />
+        <!--div class="d-flex justify-content-between align-items-center mb-3">
+            <button class="btn btn-primary">
+                <i class="fas fa-download"></i> Import
+            </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-upload"></i> Export
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Export Option 1</a>
+                    <a class="dropdown-item" href="#">Export Option 2</a>
+              
+                </div>
+            </div>
+            <button class="btn btn-primary">
+                <i class="fas fa-edit"></i> Edit
+            </button>
+        </div-->
+
+        <!-- Student and Assignment Search -->
+        <div class="row">
+            <div class="col-md-6">
+                <label for="student-search" class="form-label">Student Names</label>
+                <div class="input-group">
+                    <select id="student-search" class="form-control">
+                        <option value="" disabled selected><i class="fas fa-search"></i>Select Student</option>
+                        <!-- Add your student options here -->
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="assignment-search" class="form-label">Assignment Names</label>
+                <div class="input-group">
+                    <select id="assignment-search" class="form-control">
+                        <option value="" disabled selected><i class="fas fa-search"></i>Select Assignment</option>
+                        <!-- Add your assignment options here -->
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class="col-md-6">
+                <button class="btn btn-secondary ">
+                    <i class="fa-solid fa-filter"></i> Apply Filters
+                </button>
+            </div>
+        </div>
+        <br>
+        <!-- Grades Table -->
+        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A1 SETUP <br>
+                            OUT OF 100</th>
+                        <th>A2 HTML <br>
+                            OUT OF 100</th>
+                        <th>A3 CSS <br>
+                            OUT OF 100</th>
+                        <th>A4 BOOTSTRAP <br>
+                            OUT OF 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="student-name">Ruchi</td>
+                        <td>99</td>
+                        <td><input type="text" value="99" title="99" class="form-control"></td>
+                        <td>97</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td class="student-name">Nikhil</a></td>
+                        <td>98</td>
+                        <td>96</td>
+                        <td><input type="text" value="99" title="99" class="form-control"></td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td class = "student-name">Rutuja</td>
+                        <td><input type="text" value="99" title="99" class="form-control"></td>
+                        <td>94</td>
+                        <td>96</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td class = "student-name">Akanksha</td>
+                        <td>94</td>
+                        <td>93</td>
+                        <td>99</td>
+                        <td><input type="text" title="99" value= "99" class="form-control"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+      </body>
+      </html>
+    
+    

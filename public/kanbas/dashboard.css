@@ -1,0 +1,57 @@
+.kanbas-sidebar{
+    height: 700vh !important;
+}
+.dashboard-container{
+    margin-left: 400px;
+}
+.card-body{
+    width:250px;
+}
+@media (min-width: 1200px) {
+    .d-flex.flex-row.flex-wrap .course-card{
+        flex-basis: calc(25% - 20px); /* 4 courses per row with a little spacing */
+    }
+  
+}
+
+@media (max-width: 1199px) {
+    .d-flex.flex-row.flex-wrap .course-card {
+        flex-basis: calc(33.33% - 20px); /* 3 courses per row with a little spacing */
+    }
+}
+
+@media (max-width: 992px) {
+    .d-flex.flex-row.flex-wrap .course-card{
+        flex-basis: calc(50% - 20px); /* 2 courses per row with a little spacing */
+    }
+   
+}
+
+/* Add this media query to handle smaller screens */
+@media (max-width: 576px) {
+    .d-flex.flex-row.flex-wrap .course-card {
+        flex-basis: 100%; /* 1 course per row on smaller screens */
+        max-width: 100%;
+    }
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .course-card {
+        width: 100% !important; /* Force 1 course per row on smaller screens */
+    }
+}
+
+
+
+
+

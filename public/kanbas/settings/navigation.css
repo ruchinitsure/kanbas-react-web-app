@@ -1,0 +1,54 @@
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">" !important;
+    padding-top: 2px !important;
+}
+.list-group-item::after {
+    content: "\22EE"; 
+    color: black; 
+    float: right; 
+    margin-left: 10px; 
+    font-size: 1.2rem; 
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+        display: none;
+    }
+
+    .kanbas-sidebar-collapse {
+        display: none;
+    }
+
+    .account-sidebar-collapse {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .kanbas-sidebar {
+        display: none;
+    }
+
+    .account-sidebar {
+        display: none;
+    }
+
+    .module-sidebar {
+        width: 100%;
+    }
+    .navigation{
+        width:100%;
+    }
+}
+.navigation{
+    width:950px; 
+    margin-top: 100px;
+}
+.breadcrumb{
+    background-color: white !important;
+}

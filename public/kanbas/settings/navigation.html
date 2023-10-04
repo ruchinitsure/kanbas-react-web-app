@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -173,7 +173,365 @@
     </tr>
 </table>
 </body>
-</html>
+</html--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../h1.css" rel="stylesheet"/>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+   <link href="../settings/navigation.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+<div class="container-fluid">
+    <div class="row no-gutters">
+    <div class="row">
+       
+<div class=" kanbas-sidebar sidebar .d-none .d-sm-block" >
+    <ul>
+        <div class="logo-container">
+            <img src="../logo1.png" alt="Northeastern Logo">
+        </div>
+       <li><a href="../h3.html" class="active"><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+       <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+       <li><a href="../home.html" ><i class="fas fa-book"></i> Courses</a></li>
+       <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+       <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+       <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+       <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+       <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+       <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+    </ul>
+</div>
+
+ <div class="col-2 col-md-3 no-padding .d-block .d-md-block">
+
+ <div class="account-sidebar sidebar">
+   <div class = "hamburger-menu">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Navigation</li>
+        </ol>
+    </nav>
+   </div>
+    <hr>
+   <ul>
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="#">Modules</a></li>
+     <li><a href="#">Piazza</a></li>
+     <li><a href="#">Zoom Meetings</a></li>
+     <li><a href="../assignments/index.html">Assignments</a></li>
+     <li><a href="#">Quizzes</a></li>
+     <li><a href="../grades.html">Grades</a></li>
+     <li><a href="#">People</a></li>
+     <li><a href="#">Panopto Video</a></li>
+     <li class="d-flex align-items-center">
+        <a href="#">Discussions</a>
+        <i class="fa-regular fa-eye-slash ml-2"></i>
+      </li>
+      
+     <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+     <li class="d-flex align-items-center"><a href="../settings/details.html" class="selected">| Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+   </ul>
+ </div>
+</div>
+<div class="col-10 col-md-6 no-padding">
+    <div class = "navigation">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="../settings/details.html" class="link" style="color: red;">Course Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" class="link" style="color: red;">Sections</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../settings/navigation.html" class="link" style="color: grey;">Navigation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#"class="link" style="color: red;" >Apps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#" class="link" style="color: red;">Feature Options</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#" class="link" style="color: red;">Integrations</a>
+            </li>
+         </ul>
+         <br>
+         <br>
+        
+         <!-- Module List -->
+         <p>Drag and drop items to reorder them in the course navigation.</p>
+        
+           <!-- Modules List -->
+          
+                    <ul class="list-group ">
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Home </a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Modules</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Piazza</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Zoom Meetings</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Assignments</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Quizzes</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Grades</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">People</a></li>
+                        <li class="list-group-item custom-indent"><a href="#" class="link" style="color: black; text-decoration: none;">Panopto Video</a></li>
+                        
+                 </ul>
+                 <br>
+                 <p>Drag items here to hide them from students.</p>
+                 <p class="para" style="font-size: small;">Disabling most pages will cause students who visit those pages to be redirected to the course home page</p>
+              <!-- Module 2 -->
+              <ul class="list-group">
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Chat
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </a></div>
+                    </div>
+                
+                </li>
+                
+                <li id="item1" data-disabled="true" class="list-group-item" class="link" style="color: black; text-decoration: none;">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            SCORM
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+      
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Attendance
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Barne's and Noble Bookstore
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+              
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Digication
+                        </div>
+                    </a>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+              
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           Top Hat
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           Syllabus
+                       </a> </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Perusall
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+              
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                         Microsoft Teams Meeting
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+                
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           FACT reporting and Photo Roster
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+     
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           Progress Reports (Navigate)
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+         
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Microsoft Teams for Canvas
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           VHL Central
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+              
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                            Gradescope 1.3
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                          Credentials
+                        </a></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
             
+                </li>
+                <li id="item1" data-disabled="true" class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6"><a href="#" class="link" style="color: black; text-decoration: none;">
+                           iClicker
+                        </a></div>
+                    </div>
+                    <div class="row">
 
+                        <div class="col-md-6">
+                            <p class="mb-0">Page disabled, won't appear in navigation</p>
+                        </div>
+                    </div>
+                
+                </li>
+        
+            </ul>
+            <hr>
+        <button type="submit" class="btn btn-danger float-left" formaction="../settings/navigation.html">Save</button>
 
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+  </body>
+  </html>

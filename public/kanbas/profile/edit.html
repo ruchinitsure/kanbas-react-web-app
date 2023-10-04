@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
-<body>
-<!-- <div id="root"></div> -->
+<body-->
+<!-- <div id="root"></div> -
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -105,5 +105,150 @@
                     
             
 </table>
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+   <link href="../profile/edit.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+<div class="container-fluid">
+    <div class="row no-gutters">
+    <div class="row">
+       
+<div class="col-2 kanbas-sidebar sidebar">
+    <ul>
+        <div class="logo-container">
+            <img src="../logo1.png" alt="Northeastern Logo">
+        </div>
+       <li><a href="../h3.html" class="active"><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+       <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+       <li><a href="../home.html"><i class="fas fa-book"></i> Courses</a></li>
+       <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+       <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+       <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+       <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+       <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+       <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+    </ul>
+</div>
+
+ <div class="col-3 col-md-3 no-padding">
+
+ <div class="account-sidebar sidebar">
+    <div class="profile-heading">
+        <span class="profile-heading-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+        <span class="profile-heading-text">Ruchi Nitsure's Profile</span>
+        <div class="spacer"></div>
+        
+    </div>
+   <ul>
+       <li><a href="#">Notifications</a></li>
+       <li><a href="../profile/index.html" class="selected">|Profile</a></li>
+       <li><a href="#">Files</a></li>
+       <li><a href="../settings/details.html">Settings</a></li>
+       <li><a href="#">ePortfolios</a></li>
+       <li><a href="#">Shared Content</a></li>
+       <li><a href="#">The Hub</a></li>
+       <li><a href="#">Qwikly Course Tools</a></li>
+       <li><a href="#">Global Announcements</a></li>
+   </ul>
+ </div>
+</div>
+<div class="col-8 col-md-6">
+
+ <div class="edit-screen">
+    <div class="profile-header">
+        <i class="fa fa-user-circle fa-8x"></i>
+        <div class="profile-actions ">
+            <button class="btn btn-light ml-auto "style="margin-left: 80px;">
+                <a href="../profile/index.html"><i class="fas fa-pencil-alt"></i> Cancel Editing</a>
+            </button>
+        </div>
+        
+    </div>
+    <h2>Ruchi Nitsure</h2>
+    
+
+    <form id="text-fields">
+        <div class="form-group">
+            <label for="text-fields-name">Name:</label>
+            <input id="text-fields-name" type="text" class="form-control" value="Ruchi Nitsure" />
+        </div>
+
+        <div class="form-group">
+            <label for="text-fields-pronoun">Pronouns:</label>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="pronounDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    None
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pronounDropdown">
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">ASSIGNMENTS</a>
+                    <a class="dropdown-item" href="#">Duplicate</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="text-fields-title">Title:</label>
+            <input id="text-fields-title" type="text" class="form-control" />
+        </div>
+
+        <h4>Contact</h4>
+        <p>No registered services, you can add some on the <a href="#">settings</a> page</p>
+
+        <h4>Biography</h4>
+        <div class="form-group">
+            <textarea class="form-control" rows="5">Graduate computer science student at Northeastern University.</textarea>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Links</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" value="Youtube" /></td>
+                            <td><input type="text" class="form-control" value="https://www.youtube.com/" /> </td>
+                            <td><i class="fa-solid fa-xmark" style="color: red;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-light">Add another link</button>
+            </div>
+        </div>
+        <div class="profile-buttons d-flex justify-content-end">
+            <button class="btn btn-light float-end">
+                <a href="../profile/index.html" class="link" style="color: grey;">Cancel</a>
+            </button>
+            <button class="btn btn-danger float-end ml-2">
+                <a href="../profile/index.html" class="link" style="color: white;">Save Profile</a>
+            </button>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>

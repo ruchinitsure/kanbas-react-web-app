@@ -3,72 +3,92 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+   <link href="../h1.css" rel="stylesheet"/>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+  
+   <link href = "../profile/index.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <!-- <div id="root"></div> -->
-<table border="0" width="100%">
-    <tr valign="baseline">
-
-        <td width="20%">
-            <ul>
-                <li><a href="../h3.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="../h2.html">Courses</a></li>
-                <li><a href="#">Calender</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td width="20%">
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="../settings/details.html">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwikly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-
-   
-            </ul>
-        </td>
+<div class="sidebar-container">
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="row">
+            <div class="col-2 col-md-2 no-padding">
+<div class="kanbas-sidebar sidebar .d-none .d-md-block .d-sm-block">
+    <ul>
+        <div class="logo-container">
+            <img src="../logo1.png" alt="Northeastern Logo">
+        </div>
+       <li><a href="../h3.html" class="active"><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+       <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+       <li><a href="../home.html"><i class="fas fa-book"></i> Courses</a></li>
+       <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+       <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+       <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+       <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+       <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+       <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+    </ul>
+ </div>
+            </div>
 
 
-        <td width="40%">
+ <div class="col-3 col-md-3 account-sidebar sidebar .d-none .d-sm-block .d-md-none .d-lg-block">
+    <div class="profile-heading">
+        <span class="profile-heading-icon">
+            <i class="fas fa-bars"></i>
+         </span>
+         <span class="profile-heading-text" style="font-size: large;">
             Ruchi Nitsure's Profile
-            <hr color="grey">
-            <table border="0" width="100%">
-                <tr valign="baseline">
-                    <td width="80%">
-                    </td>
-                    <td width="20%">
-                        <!-- Button on the right -->
-                        <button><a href = "edit.html">Edit Profile</a></button>
-                    </td>
-                </tr>
-            </table>
+         </span>
+        
+    </div>
+   <ul>
+       <li><a href="#">Notifications</a></li>
+       <li><a href="../profile/index.html" class="selected">| Profile</a></li>
+       <li><a href="#">Files</a></li>
+       <li><a href="../settings/details.html">Settings</a></li>
+       <li><a href="#">ePortfolios</a></li>
+       <li><a href="#">Shared Content</a></li>
+       <li><a href="#">The Hub</a></li>
+       <li><a href="#">Qwikly Course Tools</a></li>
+       <li><a href="#">Global Announcements</a></li>
+   </ul>
+ </div>
 
-            <h2>Ruchi Nitsure</h2>
-            <br/>
-            <h3>Contact</h3>
-            No registered services, you can add some on the <a href="#">settings</a> page
-            <br/>
-            <h3>Biography</h3>
-            Graduate computer science student at Northeastern University.
-            <br/>
-            <h3>Links</h3>
-             <a href="#">Youtube</a>
-
-
-
-
+ <div class="col-7 col-md-7 .d-block">
+ <div class="profile-screen">
+    <div class="profile-header">
+        <i class="fas fa-user-circle fa-8x"></i>
+        <div class="profile-actions ">
+            <button class="btn btn-light ml-auto "style="margin-left: 80px;">
+                <a href="../profile/edit.html" class="link" style="color: grey;"><i class="fas fa-pencil-alt"></i> Edit Profile</a>
+            </button>
+        </div>
+        
+    </div>
+    <div class="d-flex align-items-center">
+        <h2 class="heading">Ruchi Nitsure</h2>
+        
+    </div>
     
-            
-</table>
+    <h3>Contact</h3>
+    <p>No registered services, you can add some on the <a href="#" class="set" style="color: red;">settings</a> page</p>
+    <h3>Biography</h3>
+    <p>Graduate computer science student at Northeastern University.</p>
+    <h3>Links</h3>
+    <p><i class="fas fa-link"></i><a href="https://www.youtube.com/watch?v=YzZz16Gtfdc" class="set" style="color: red;">YouTube Channel</a></p>
+</div>
+</div>
+ <div class="sidebar-container"></div>
+
+ <div class="clear"></div>
+    </div>
+    </div>
+
 </body>
 </html>

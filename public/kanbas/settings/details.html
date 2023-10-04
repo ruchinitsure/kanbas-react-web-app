@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
-<!-- <div id="root"></div> -->
+
 <table border="0" width="100%">
     <tr valign="baseline">
 
@@ -173,4 +173,414 @@
             
 </table>
 </body>
-</html>
+</html--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="../h1.css" rel="stylesheet"/>
+   <link href="../h3.css" rel="stylesheet"/>
+   
+   <link href="../settings/details.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- <div id="root"></div> -->
+
+<div class="sidebar-container">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+        <div class="row">
+           
+    <div class="kanbas-sidebar sidebar .d-none .d-sm-block">
+        <ul>
+            <div class="logo-container">
+                <img src="../logo1.png" alt="Northeastern Logo">
+            </div>
+           <li><a href="../h3.html" class="active"><i class="fa-regular fa-circle-user" style = "color: grey;"></i> Account</a></li>
+           <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+           <li><a href="../home.html" ><i class="fas fa-book"></i> Courses</a></li>
+           <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+           <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+           <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+           <li><a href="#"><i class="fas fa-video"></i> Studio</a></li>
+           <li><a href="#"><i class="fas fa-share-alt"></i> Commons</a></li>
+           <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+        </ul>
+    </div>
+    
+     <div class="col-3 col-md-4 no-padding .d-none .d-sm-block">
+    
+     <div class="account-sidebar sidebar">
+        <div class="profile-header">
+            <span class="profile-heading-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                </ol>
+            </nav>
+
+        </div>
+        <hr>
+       <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+         <li><a href="#">Piazza</a></li>
+         <li><a href="#">Zoom Meetings</a></li>
+         <li><a href="../assignments/index.html" >Assignments</a></li>
+         <li><a href="#">Quizzes</a></li>
+         <li><a href="../grades.html">Grades</a></li>
+         <li><a href="#">People</a></li>
+         <li><a href="#">Panopto Video</a></li>
+         <li class="d-flex align-items-center">
+            <a href="#">Discussions</a>
+            <i class="fa-regular fa-eye-slash ml-2"></i>
+          </li>
+          
+         <li class="d-flex align-items-center"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+         <li class="d-flex align-items-center" ><a href="../settings/details.html" class="selected">|Settings</a><i class="fa-regular fa-eye-slash"></i></li>
+       </ul>
+     </div>
+    </div>
+    <div class="col-9 col-md-6">
+        <div class = "grade">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../settings/details.html" class="link" style="color: grey;">Course Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" class="link" style="color: red;">Sections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../settings/navigation.html" class="link" style="color: red;">Navigation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" class="link" style="color: red;">Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#"class="link" style="color: red;" >Feature Options</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#"class="link" style="color: red;" >Integrations</a>
+                </li>
+             </ul>
+             <br>
+             <br>
+             
+             <div class="row mb-3">
+                <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                  Image:</label>
+                  <button type="button" class="btn-sm btn-light  mb-1">
+                    Choose Image
+                </button>
+                </div>
+                <br>
+                <br>
+
+                <div class="row mb-3">
+                    <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Name:</label>
+                      <p class="form-control-static">CS4550 12631 Web Development SEC 01 Fall 2023[BOS-1-TR]</p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <label for="r4" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Course Code:</label>
+                      <p class="form-control-static">CS4550.12631.202410</p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                        Course Template:</label>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input"
+                               type="checkbox" id="r6"/>
+                          <label class="form-check-label" for="r6">
+                            Enable course as a Course Template</label>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row mb-3">
+                    <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Time Zone:</label>
+                    <div class="col col-sm-10">
+                        <select id="r2" class="form-control">
+                            <option value="Edit">Edit</option>
+                            <option selected value="ASSIGNMENTS">Eastern Time(US & Canada)(-05:00/-04:00)</option>
+                            <option value="Duplicate">Duplicate</option>
+                            <option value="Delete">Delete</option>
+                        </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row mb-3">
+                    <label for="r4" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      SIS ID:</label>
+                      <p class="form-control-static">CS4550.12631.202410</p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <label for="r4" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Subaccount:</label>
+                      <p class="form-control-static"><a href = "#" class="red-link">CS Grad</a></p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <label for="r4" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Term:</label>
+                      <p class="form-control-static"><a href = "#" class="red-link">202410_1 Fall 2023 Semester Full Term</a></p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                      Participation:</label>
+                    <div class="col col-sm-10">
+                        <select id="r2" class="form-control">
+                            <option value="Edit">Edit</option>
+                            <option selected value="Term">Term</option>
+                            <option value="Duplicate">Duplicate</option>
+                            <option value="Delete">Delete</option>
+                        </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row mb-3">
+            
+                      <p class="form-control-static" style="margin-left: 190px;">Course participation is limited to <b>term</b> start and end dates.</p>
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <div class = "col-sm-10">
+
+            
+                    <label class="start" style="margin-left: 190px;" style = "font-weight: bold;">Start:</label>
+                    <input type="date" id="text-fields-dob1" class="form-control" style="margin-left: 190px;">
+                </div>
+              </div>
+              <br>
+              <div class="row mb-3">
+                <div class = "col-sm-10">
+
+        
+                <label class="start" style="margin-left: 190px;"style = "font-weight: bold;">End</label>
+                <input type="date" id="text-fields-dob1" class="form-control" style="margin-left: 190px;">
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <div class="col-sm-10">
+              <div class="form-check" style="margin-left: 190px;">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label"  for="r6">
+                    Restrict students from viewing course before term start date</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <div class="col-sm-10">
+              <div class="form-check "style="margin-left: 190px;">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label"  for="r6">
+                    Restrict students from viewing course after term start date</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              Default due time:</label>
+            <div class="col col-sm-10">
+                <select id="r2" class="form-control">
+                    <option value="Edit">Edit</option>
+                    <option selected value="Term">Account default(11:59pm)
+                    </option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select>
+            </div>
+          </div>
+          <br>
+          <p class="para">This influences the user interface for setting due dates. It does not change the time due for any existing assignments.</p>
+          <br>
+          <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              Language:</label>
+            <div class="col col-sm-10">
+                <select id="r2" class="form-control">
+                    <option value="Edit">Edit</option>
+                    <option selected value="Term">Not set(user-configurable, defaults to English(US))
+                    </option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select>
+            </div>
+          </div>
+          <br>
+          <p class="para">This will override any user/system language preferences. This is only recommended for foreign language courses.</p>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              File Storage:</label>
+              <p class="form-control-static">1000 megabytes</p>
+        </div>
+        <br>
+        <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                Large Course:</label>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Launch SpeedGrader Filtered by Student Group</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                Grading Scheme:</label>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Enable course grading scheme</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              License:</label>
+            <div class="col col-sm-10">
+                <select id="r2" class="form-control">
+                    <option value="Edit">Edit</option>
+                    <option selected value="ASSIGNMENTS">Private (Copyrighted)</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                File Copyright:</label>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Copyright and license information must be provided for files before they are published.</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              Name:</label>
+              <p class="form-control-static">If you need to make your course Public, please contact your administrator/support.</p>
+              <br>
+              <div class="col col-sm-10 disabled" style="margin-left: 170px;">
+                <select id="r2" class="form-control">
+                    <option value="Edit">Edit</option>
+                    <option selected value="ASSIGNMENTS">Private (Copyrighted)</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select>
+            </div>
+            <br>
+            <div class="col-sm-10" style="margin-left: 170px;">
+                <div class="form-check">
+                  <input class="form-check-input"
+                         type="checkbox" id="r6"/>
+                    <label class="form-check-label" for="r6">
+                      Include this course in the public course index</label>
+                </div>
+              </div>
+              <br>
+        </div>
+        <br>
+        <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              Format:</label>
+            <div class="col col-sm-10">
+                <select id="r2" class="form-control">
+                    <option value="Edit">Edit</option>
+                    <option selected value="ASSIGNMENTS">On-Campus</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                </select>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+                Mystery Paths:</label>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Enable individual learning paths for students based on assessment</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row mb-3">
+            <label for="r3" class="col-sm-2 col-form-label" style = "font-weight: bold;">
+              Description:</label>
+              <div class="col-sm-10">
+              <textarea id="assignment-description" class="form-control" rows="5">This is the assignment description.</textarea>
+            </div>
+        </div>
+        <br>
+        <a href="#" class="red-link" style="margin-left: 190px;">more options</a>
+        <hr>
+        <button type="submit" class="btn btn-danger float-right" formaction="../settings/details.html">Update Course Details</button>
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+                
+                
+        
+
+       
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+      </body>
+      </html>
