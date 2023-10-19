@@ -1,0 +1,74 @@
+
+  
+  .mod{
+    width: 600px; /* Adjust the width of nested items */
+    height: 80px; /* Adjust the height of nested items */
+   
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .module {
+    margin-bottom: 50px; /* Spacing between module items */
+  }
+  
+  .lesson {
+    margin-bottom: 5px; /* Spacing between lesson items */
+  }
+  
+  .dropdown-button {
+    background-color: #f0f0f0;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-button.open {
+    background-color: #d0d0d0; /* Different background for open dropdowns */
+  }
+  
+  .module-content,
+  .lesson-content {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .module-content p,
+  .lesson-content p {
+    margin: 10px; /* Remove default margins for paragraphs */
+  }
+  
+  .dropdown-button.open + .module-content,
+  .dropdown-button.open + .lesson-content {
+    display: block; /* Display content when the button is open */
+  }
+  .list-group-item .module{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+  }
+ 
+  .dropdown-button h3 {
+    margin-bottom: 10px; /* Add space below module names */
+  }
+  @media (max-width: 576px) {
+
+
+    .mod{
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+
+    .mod {
+        width: 100%;
+    }
+   
+} 
+.check{
+  margin-left: 250px;
+}

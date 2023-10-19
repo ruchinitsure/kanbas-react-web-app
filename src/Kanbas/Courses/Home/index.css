@@ -1,0 +1,64 @@
+.list-group{
+    margin-right:30px;
+}
+@media (max-width: 576px) {
+    .module-sidebar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .module-sidebar button {
+      margin-bottom: 10px;
+    }
+  
+    .module-sidebar .dropdown {
+      margin-top: 10px;
+    }
+   
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .module-sidebar button {
+      font-size: 12px;
+    }
+  
+    .module-sidebar .dropdown button {
+      font-size: 12px;
+    }
+    
+  }
+  
+  /* Media query for screens smaller than 992px */
+  @media (max-width: 992px) {
+    .module-sidebar .dropdown-menu a {
+      font-size: 12px;
+    }
+  
+  }
+  
+  /* Media query for screens smaller than 1200px */
+  @media (max-width: 1200px) {
+    .module-sidebar button {
+      font-size: 14px;
+    }
+  
+    .module-sidebar .dropdown button {
+      font-size: 14px;
+    }
+   
+  }
+  
+  /* Media query for screens smaller than 1400px */
+  @media (max-width: 1400px) {
+    .list-group-item a {
+      font-size: 14px;
+    }
+   
+  }
+  @media (max-width: 576px) {
+   .list, .todo, .coming-up {
+      display: none;
+    }
+  }

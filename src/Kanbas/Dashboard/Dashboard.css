@@ -1,0 +1,17 @@
+.card {
+    width: 18rem;
+    padding: 10px;
+    margin-left: 30px;
+    height: 300px !important; /* Adjust the height as needed */
+  }
+  
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  .card-title{
+    color : black !important;
+  }
+  .name{
+    color : blue !important;
+  }

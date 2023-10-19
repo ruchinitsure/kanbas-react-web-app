@@ -1,0 +1,87 @@
+.grade{
+    margin-top: 120px;
+   
+}
+.table-container {
+  max-width: 1100px;
+}
+.table-striped th,
+.table-striped td {
+  border-color: grey !important; 
+  border-width: 1px !important; 
+  border-style: solid !important; 
+}
+@media (max-width: 576px) {
+
+
+    .grade{
+        width: 100%;
+    }
+   
+}
+@media (max-width: 768px) {
+
+    .grade {
+        width: 100%;
+    }
+   
+} 
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
+
+/* Optional: Customize the scrollbar */
+.my-custom-scrollbar {
+    position: relative;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow: auto;
+}
+.my-custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Optional: Customize the scrollbar */
+.table-responsive::-webkit-scrollbar {
+    width: 12px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+.input-group{
+    width:300px !important;
+}
+.gradebook{
+    margin-top: 55px;
+    
+}
+.book{
+    color:red;
+}
+.imp{
+    margin-right: 50px;
+}
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+.rounded-pill{
+    margin-left: 500px;
+    color : grey !important;
+}
+.assign3{
+    margin-left: 250px;
+}
+.assign2{
+    width: 800px;
+    margin-top: 30px;
+}
+.multiple{
+    color: red;
+    font-size: small;
+}
+.due{
+    font-size: small;
+}
+@media (max-width: 576px) {
+    /* Adjust the font size and padding for small screens */
+    .assign3 button,
+    .ellipsis-button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    .assign2 .list-group-item .badge {
+      font-size: 12px;
+    }
+  
+    .assign2 .list-group-item .multiple,
+    .assign2 .list-group-item .due {
+      font-size: 12px;
+    }
+  }
+  
+  /* Media query for screens larger than 576px */
+  

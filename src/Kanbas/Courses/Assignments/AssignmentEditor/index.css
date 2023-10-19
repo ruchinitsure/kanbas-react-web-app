@@ -1,0 +1,29 @@
+.editor{
+    width : 800px;
+}
+@media (max-width: 576px) {
+    .editor {
+      padding: 10px;
+    }
+  
+    .btn-sm {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  
+    .form-label {
+      font-size: 14px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+    }
+  
+    .row {
+      margin: 5px 0;
+    }
+
+  }
+  .publish{
+    color: green;
+  }

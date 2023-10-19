@@ -1,0 +1,19 @@
+.module-sidebar{
+    margin-left: 115px;
+}
+
+.ellipsis-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ellipsis-icon::after {
+    content: "\22EE"; /* Unicode character for vertical ellipsis */
+    font-size: 24px;
+    color: #000; /* Icon color */
+}
+.but{
+    margin-left: 900px;
+    margin-top: 0px;
+}

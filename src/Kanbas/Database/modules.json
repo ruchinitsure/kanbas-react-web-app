@@ -1,0 +1,98 @@
+[
+    {
+      "_id": "M101",
+      "name": "Resources",
+      "description": "Required resources for the course.",
+      "course": "RS101",
+      "lessons": [
+        {
+          "name": "Intro To Web Dev - Youtube",
+          "description": "Recommended Video"
+        },
+        {
+            "name": "Intro To Web Dev",
+            "description": "Recommended Book"
+        },
+        {
+            "name": "Intro To Web Dev",
+            "description": "Recommended Book"
+        }
+      ]
+    },
+    {
+      "_id": "M102",
+      "name": "Required Textbook",
+      "description": "Required textbooks",
+      "course": "RS101",
+      "lessons": [
+        {
+          "name": "Full Stack ",
+          "description": "By Jose"
+        },
+        {
+            "name": "Full Stack ",
+            "description": "By Jose"
+        },
+        {
+            "name": "Full Stack ",
+            "description": "By Jose"
+        }
+      ]
+    },
+    {
+      "_id": "M103",
+      "name": "Week 0 - INTRO",
+      "description": "Principles of rocket nozzle design and performance optimization.",
+      "course": "RS101",
+      "lessons": [
+        {
+          "name": "Nozzle Design I",
+          "description": "The nozzle is the part of a rocket engine that converts the energy of the propellant into kinetic energy. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction."
+        },
+        {
+          "name": "Nozzle Design II",
+          "description": "The nozzle is the part of a rocket engine that converts the energy of the propellant into kinetic energy. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction."
+        },
+        {
+          "name": "Nozzle Design III",
+          "description": "The nozzle is the part of a rocket engine that converts the energy of the propellant into kinetic energy. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction. The nozzle is designed to accelerate the propellant to a high speed and direct it in the desired direction."
+        }
+      ]
+    },
+    {
+      "_id": "M201",
+      "name": "Week 1 - HTML",
+      "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M202",
+      "name": "Subsonic and Supersonic Flow",
+      "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M203",
+      "name": "Aerodynamic Heating",
+      "description": "Study of aerodynamic heating and thermal protection systems.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M301",
+      "name": "Spacecraft Structural Design",
+      "description": "Fundamentals of designing spacecraft structures and materials selection.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M302",
+      "name": "Orbital Mechanics",
+      "description": "Understanding orbital dynamics and mission planning.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M303",
+      "name": "Spacecraft Systems Engineering",
+      "description": "Overview of spacecraft systems and subsystems engineering.",
+      "course": "RS103"
+    }
+  ]
