@@ -1,146 +1,117 @@
-import React from "react";
-import db from "../../../Database";
-import { Link } from "react-router-dom";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useParams, Link, useNavigate} from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { editAssignment } from "../assignmentsReducer";
 import { FaCheck } from "react-icons/fa";
 import "./index.css"
+
+
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
-  const assignment = db.assignments.find((a) => a._id === assignmentId);
+  const assignment = useSelector((state) => state.assignmentsReducer.assignments.find(a => a._id === assignmentId));
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const [updatedAssignment, setUpdatedAssignment] = useState(assignment);
+
   const handleSave = () => {
-    console.log("Actually save the assignment TBD");
-    // go back to assignments
+    dispatch(editAssignment(updatedAssignment));
+    // Placeholder for navigation, you need to implement your own navigation logic
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+    console.log("Assignment saved. Redirect to Assignments screen.");
   };
+
   return (
     <div className="editor">
-      {/* <h1>Assignment Editor!!! {assignment.title}</h1> */}
-      <div class="d-flex justify-content-end">
-                <div class="button-right">
-    
-              <button type="button" class="btn-sm btn-success custom-success-btn mb-1">
-               <span className="publish"><FaCheck /> Published</span>
-            </button>
-            </div>
-            <button class="ellipsis-button">
-        <span class="ellipsis-icon"></span>
-    </button>
-     </div>
-      <label for="text-fields-student">Assignment Name</label>
-      <input className="form-control" defaultValue={assignment.title} />
-      <br></br>
-      <textarea id="assignment-description" class="form-control" rows="5">This is the assignment description.</textarea>
-      <br></br>
-        <div class="row mb-3">
-                <label for="r1" class="col-sm-2 col-form-label">
-                  Points</label>
-                <div class="col col-sm-10">
-                  <input type="number" class="form-control"
-                         id="r1"/>
-                </div>
+      <div className="d-flex justify-content-end">
+        <div className="button-right">
+          <button type="button" className="btn-sm btn-success custom-success-btn mb-1">
+            <span className="publish"><FaCheck /> Published</span>
+          </button>
         </div>
-              <br></br>
-              <div class="row mb-3">
-                <label for="r2" class="col-sm-2 col-form-label">
-                  Assign Group</label>
-                <div class="col col-sm-10">
-                    <select id="r2" class="form-control">
-                        <option value="Edit">Edit</option>
-                        <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
-                        <option value="Duplicate">Duplicate</option>
-                        <option value="Delete">Delete</option>
-                    </select>
-                </div>
-              </div>
-              <br></br>
-              <div class="row mb-3">
-                <label for="r2" class="col-sm-2 col-form-label">
-                  Display Grade As</label>
-                <div class="col col-sm-10">
-                    <select id="text-fields-display-grade" class="form-control">
-                        <option value="Edit"></option>
-                        <option selected value="Percentage">Percentage</option>
-                        <option value="Duplicate"></option>
-                        <option value="Delete"></option>
-                    </select>
-                </div>
-              <br></br>
-              <br></br>
-              <br></br>
-              <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                  <div class="form-check">
-                    <input class="form-check-input"
-                           type="checkbox" id="r6"/>
-                      <label class="form-check-label" for="r6">
-                        Do not count this assignment towards the final grade</label>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-            <div class="row mb-3">
-                <div class="col col-sm-6">
-                    <label for="input1" class="form-label">Submission Type</label>
-                </div>
-                <div class="col-sm-6 border p-3">
-                   
-                    
-                    <select class="form-select">
-                        <option selected>Online</option>
-                     </select>
-                     <br></br>
-                     <label class="form-check-label mb-3 mt-3">Online Entry Options</label>
-                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
-                        <label class="form-check-label" for="flexCheckChecked">
-                          Text Entry
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
-                        <label class="form-check-label" for="flexCheckChecked">
-                          Website URL 
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
-                        <label class="form-check-label" for="flexCheckChecked">
-                          Media Recordings
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Student Annotations
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-                        <label class="form-check-label" for="flexCheckDefault">
-                          File Uploads
-                        </label>
-                      </div>
-
-                </div>
-                
-       
-            </div>
-            <hr></hr>
-        
-        
-     <div class="d-flex justify-content-end">
-      <button onClick={handleSave} className="btn btn-danger">
-        Save
-      </button>
-      <Link
-        className="btn "
-        to={`/Kanbas/Courses/${courseId}/Assignments`}
-      >
-        Cancel
-      </Link>
+        <button className="ellipsis-button">
+          <span className="ellipsis-icon"></span>
+        </button>
       </div>
+      <label htmlFor="text-fields-student">Assignment Name</label>
+      <input
+        className="form-control"
+        value={updatedAssignment.title}
+        onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, title: e.target.value })}
+      />
+      <br></br>
+      <textarea
+        id="assignment-description"
+        className="form-control"
+        rows="5"
+        value={updatedAssignment.description}
+        onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, description: e.target.value })}
+      >
+      </textarea>
+      <br></br>
+      {/* Other fields you want to edit */}
+      <div className="row mb-3">
+        <label for="r1" className="col-sm-2 col-form-label">
+          Points
+        </label>
+        <div className="col col-sm-10">
+          <input
+            type="number"
+            className="form-control"
+            id="r1"
+            value={updatedAssignment.points}
+            onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, points: e.target.value })}
+          />
+        </div>
+      </div>
+      <br></br>
+      <div class="row mb-3">
+                <div class="col col-sm-6">
+                    <label for="input1" class="form-label">Assign To</label>
+                </div>
+                <div class="col col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="col-md-10">
+                                <label for="text-fields-assign">Assign To</label>
+                                <input id="text-fields-assign" type="text" class="form-control" value="Everyone" placeholder="Everyone" /><br></br>
+                         
+                                <label for="text-fields-dob1">Due Date</label>
+                                
+                                <input type="date"className="form-control" id="text-fields-dob1" value={updatedAssignment.due} onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, due: e.target.value })}/>
+                                <br></br>
+                                <div class="row">
+                                    <div class="col">
+                               
+                                        <label for="text-fields-dob2">Available from</label>
+                                        <input type="date" id="text-fields-dob2" value={updatedAssignment.avail} onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, avail: e.target.value })} class="form-control" />
+                                    </div>
+                                    <div class="col">
+                                
+                                        <label for="text-fields-dob3">Until</label>
+                                        <input type="date" id="text-fields-dob3" value={updatedAssignment.until} onChange={(e) => setUpdatedAssignment({ ...updatedAssignment, until: e.target.value })} class="form-control" />
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    
+
+            <hr></hr>
+     
+      <div className="d-flex justify-content-end">
+        <button onClick={handleSave} className="btn btn-danger">
+          Save
+        </button>
+        <Link
+          className="btn"
+          to={`/Kanbas/Courses/${courseId}/Assignments`}
+        >
+          Cancel
+        </Link>
+      </div>
+    </div>
+    </div>
     </div>
   );
 }

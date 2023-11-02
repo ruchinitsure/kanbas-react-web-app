@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import "./ModuleList.css";
-import { FaCheckCircle } from 'react-icons/fa';
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
 
   const [openModule, setOpenModule] = useState(null);
   const [openLesson, setOpenLesson] = useState(null);
@@ -30,23 +37,47 @@ function ModuleList() {
   return (
     <div className="mod">
       <ul className="list-group">
+        <li className="list-group-item">
+          <input
+            value={module.name}
+            onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
+            className="form-control"
+          />
+          <textarea
+            value={module.description}
+            onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
+            className="form-control"
+          />
+          <button onClick={() => dispatch(addModule({ ...module, course: courseId }))} className="btn btn-success">
+            Add
+          </button>
+          <button onClick={() => dispatch(updateModule(module))} className="btn btn-primary">
+            Update
+          </button>
+        </li>
         {modules
           .filter((module) => module.course === courseId)
           .map((module, moduleIndex) => (
             <li key={moduleIndex} className="list-group-item module">
               <button
-  className={`dropdown-button ${openModule === moduleIndex ? "open" : ""}`}
-  onClick={() => handleModuleClick(moduleIndex)}
->
-  <div className="d-flex justify-content-between align-items-center">
-    <span><h3>{module.name}</h3></span>
-    <span className = "check" style={{ color: 'green' }}>
-      <FaCheckCircle />
-    </span>
-    <span className="ellipsis-icon"></span>
-  </div>
-</button>
-              
+                className={`dropdown-button ${openModule === moduleIndex ? "open" : ""}`}
+                onClick={() => handleModuleClick(moduleIndex)}
+              >
+                <div className="d-flex justify-content-between align-items-center">
+                  <span>
+                    <h3>{module.name}</h3>
+                  </span>
+                  <div className="ed">
+                  <button onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger">
+                      Delete
+                    </button>
+                    <button onClick={() => dispatch(setModule(module))} className="btn btn-success">
+                      Edit
+                    </button>
+                    
+                  </div>
+                </div>
+              </button>
               {openModule === moduleIndex && (
                 <div className="module-content">
                   <p>{module.description}</p>
@@ -58,7 +89,6 @@ function ModuleList() {
                             className={`dropdown-button ${openLesson === lessonIndex ? "open" : ""}`}
                             onClick={() => handleLessonClick(lessonIndex)}
                           >
-                    
                             <h4>{lesson.name}</h4>
                           </button>
                           {openLesson === lessonIndex && (

@@ -1,5 +1,5 @@
 .editor{
-    width : 800px;
+    width : 1000px;
 }
 @media (max-width: 576px) {
     .editor {
@@ -26,4 +26,8 @@
   }
   .publish{
     color: green;
+  }
+  .card{
+      width: 500px !important;;
+
   }

@@ -15,3 +15,11 @@
   .name{
     color : blue !important;
   }
+  .course-link {
+    color: #000;
+    text-decoration: none;
+  }
+  .link{
+    text-decoration: none;
+  
+  }

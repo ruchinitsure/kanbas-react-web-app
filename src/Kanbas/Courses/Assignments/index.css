@@ -6,11 +6,11 @@
     margin-left: 250px;
 }
 .assign2{
-    width: 800px;
+    width: 800px !important;
     margin-top: 30px;
 }
 .multiple{
-    color: red;
+    color: red !important;
     font-size: small;
 }
 .due{

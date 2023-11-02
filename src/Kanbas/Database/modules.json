@@ -67,7 +67,7 @@
     },
     {
       "_id": "M202",
-      "name": "Subsonic and Supersonic Flow",
+      "name": "Week3",
       "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
       "course": "RS102"
     },
@@ -91,7 +91,7 @@
     },
     {
       "_id": "M303",
-      "name": "Spacecraft Systems Engineering",
+      "name": "Week4",
       "description": "Overview of spacecraft systems and subsystems engineering.",
       "course": "RS103"
     }

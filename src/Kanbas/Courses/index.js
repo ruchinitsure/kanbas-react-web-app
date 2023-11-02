@@ -10,9 +10,9 @@ import "./index.css";
 import { AiOutlineMenu } from "react-icons/ai";
 
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
 
   const { pathname } = useLocation();
   const pathParts = pathname.split("/").filter((part) => part !== "");
