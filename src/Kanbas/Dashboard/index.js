@@ -5,14 +5,13 @@ import "./Dashboard.css"
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }
 ) {
-  
-
   return (
     <div className="container">
       <h1>Dashboard</h1>
       <hr></hr>
       <h5>Published Courses(3)</h5>
       <hr></hr>
+      
       <input
         value={course.name}
         className="form-control"

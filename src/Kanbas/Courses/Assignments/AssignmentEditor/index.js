@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
 import { useParams, Link, useNavigate} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { editAssignment } from "../assignmentsReducer";
@@ -6,19 +6,35 @@ import { FaCheck } from "react-icons/fa";
 import "./index.css"
 
 
+
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
-  const assignment = useSelector((state) => state.assignmentsReducer.assignments.find(a => a._id === assignmentId));
+  const assignment = useSelector((state) => state.assignmentsReducer.assignments.find(a => a?._id === assignmentId)) || {
+    title: "",
+    description: "",
+    points: 0,
+    due: "",
+    avail: "",
+    until: "",
+  };
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [updatedAssignment, setUpdatedAssignment] = useState(assignment);
 
-  const handleSave = () => {
-    dispatch(editAssignment(updatedAssignment));
-    // Placeholder for navigation, you need to implement your own navigation logic
-    navigate(`/Kanbas/Courses/${courseId}/Assignments`);
-    console.log("Assignment saved. Redirect to Assignments screen.");
+  const handleSave = async () => {
+    console.log("Assignment ID:", assignmentId);
+    console.log("Updated Assignment:", updatedAssignment);
+  
+    try {
+      await editAssignment(assignmentId, updatedAssignment);
+      // Placeholder for navigation, you need to implement your own navigation logic
+      navigate(`/Kanbas/Courses/${courseId}/Assignments`);
+      console.log("Assignment saved. Redirect to Assignments screen.");
+    } catch (error) {
+      console.error("Error editing assignment:", error);
+      // Handle the error as needed
+    }
   };
 
   return (

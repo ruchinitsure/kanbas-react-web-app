@@ -8,11 +8,29 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "./index.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 
 
 function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  
+  const [course, setCourse] = useState({});
+  // const API_BASE = process.env.REACT_APP_API_BASE;
+  // const URL = `${API_BASE}/courses`;
+   const URL = "https://kanbas-node-server-app-d7f7.onrender.com/api/courses";
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+  // const course = courses.find((course) => course._id === courseId);
 
   const { pathname } = useLocation();
   const pathParts = pathname.split("/").filter((part) => part !== "");

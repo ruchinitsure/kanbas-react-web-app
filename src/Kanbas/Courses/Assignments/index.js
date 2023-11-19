@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Link, useParams ,useNavigate} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { createAssignment, removeAssignment } from "./assignmentsReducer";
+import { createAssignment, removeAssignment, setAssignments } from "./assignmentsReducer";
 import { FaCheckCircle } from 'react-icons/fa';
 import { RiAddLine } from 'react-icons/ri';
 import "./index.css";
+import { findAssignmentsForCourse} from "./client";
 
 function Assignments() {
   const { courseId,points,due } = useParams();
@@ -25,6 +26,19 @@ function Assignments() {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    fetchAssignments();
+  }, [courseId]);
+
+  const fetchAssignments = async () => {
+    try {
+      const assignments = await findAssignmentsForCourse(courseId);
+      dispatch(setAssignments(assignments));
+    } catch (error) {
+      console.error("Error fetching assignments:", error);
+    }
+  };
+
   const toggleAssignments = () => {
     setIsAssignmentsOpen(!isAssignmentsOpen);
   };
@@ -41,7 +55,7 @@ function Assignments() {
     return newId;
   }
   
-  // Replace this with your actual logic for generating a random ID
+
   function generateRandomID() {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     const length = 4;
@@ -55,26 +69,50 @@ function Assignments() {
     return randomID;
   }
 
-  const handleAddAssignment = () => {
-    const assignmentID = generateUniqueAssignmentID(courseAssignments); // Pass the courseAssignments array
-    dispatch(createAssignment({
-      ...newAssignment,
-      _id: assignmentID, 
-    }));
+  const handleAddAssignment = async () => {
+    try {
+      // Generate a unique assignment ID
+      const assignmentId = generateUniqueAssignmentID(courseAssignments);
   
-    setNewAssignment({
-      title: "",
-      description: "",
-      course: courseId,
-      points:points,
-    });
-      navigate(`/Kanbas/Courses/${courseId}/Assignments/${assignmentID}`);
+      // Create a new assignment object with the generated ID
+      const newAssignmentWithId = {
+        ...newAssignment,
+        _id: assignmentId,
+      };
+  
+      // Call createAssignment with the new assignment object
+      const assignment = await createAssignment(courseId, newAssignmentWithId);
+  
+      // Dispatch the created assignment to the Redux store
+      dispatch(createAssignment(assignment));
+  
+      // Reset the form fields
+      setNewAssignment({
+        title: "",
+        description: "",
+        course: courseId,
+        points: points,
+        due: due,
+      });
+  
+      // Use the navigate function to redirect to the new assignment page
+      navigate(`/Kanbas/Courses/${courseId}/Assignments/${assignmentId}`);
+    } catch (error) {
+      console.error("Error adding assignment:", error);
+      // Handle the error as needed
+    }
   };
 
-  const handleDeleteAssignment = (assignmentId) => {
+  const handleDeleteAssignment = async (assignmentId) => {
     const confirmDelete = window.confirm("Are you sure you want to delete this assignment?");
     if (confirmDelete) {
-      dispatch(removeAssignment(assignmentId));
+      try {
+        await removeAssignment(assignmentId);
+        dispatch(removeAssignment(assignmentId));
+      } catch (error) {
+        console.error("Error deleting assignment:", error);
+        // Handle the error as needed
+      }
     }
   };
 
